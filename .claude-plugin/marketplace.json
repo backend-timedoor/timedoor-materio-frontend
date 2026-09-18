@@ -1,0 +1,14 @@
+{
+  "name": "timedoor-materio-frontend",
+  "owner": {
+    "name": "Timedoor Backend"
+  },
+  "plugins": [
+    {
+      "name": "timedoor-materio-nuxt",
+      "source": "./",
+      "description": "Build Materio-based Nuxt admin pages following established production conventions.",
+      "version": "1.0.0"
+    }
+  ]
+}
