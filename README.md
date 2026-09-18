@@ -31,6 +31,8 @@ skills/
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) CLI installed
 
+There are 2 ways you can install this skill: 
+
 ### Install the skill
 
 Clone the repository and copy (or symlink) the skill into your project's skills directory:
@@ -52,6 +54,25 @@ Using a symlink instead of copying keeps the skill updated with `git pull`:
 ```bash
 ln -s /path/to/timedoor-materio-frontend/skills/materio-nuxt-admin \
       /path/to/your-project/.claude/skills/materio-nuxt-admin
+```
+
+### Install as a Claude Code plugin
+
+The repository includes a Claude Code plugin and marketplace manifest. Install it from the Claude Code interactive prompt:
+
+```text
+/plugin marketplace add backend-timedoor/timedoor-materio-frontend
+/plugin install timedoor-materio-nuxt@timedoor-materio-nuxt
+```
+
+```text
+/plugin
+```
+
+For local development, load the plugin without installing it:
+
+```bash
+claude --plugin-dir /path/to/timedoor-materio-frontend
 ```
 
 ## Usage
