@@ -1,7 +1,7 @@
 {
   "name": "timedoor-materio-nuxt",
   "description": "Build Materio-based Nuxt admin pages following established production conventions: CRUD workflows, forms, data tables, dashboards, dialogs, and permission-controlled UI.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "Timedoor Backend"
   },
