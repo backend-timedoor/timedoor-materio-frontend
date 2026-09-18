@@ -11,13 +11,14 @@ Build pages using the target project's established conventions, using the ingest
 
 1. Read `references/conventions.md` before choosing file locations, route names, or component names.
 2. Read `references/component-catalog.md` before creating any component. Reuse an existing catalog component when it matches the requirement.
-3. Read `references/data-patterns.md` before wiring API calls, loading state, error handling, auth, permissions, or workspace behavior.
-4. Use `examples/crud-page/` as a framework-neutral CRUD checklist and adapt its API, component, route, and state details to the target project profile.
-5. Cross-check stock-vs-custom guidance before extending or wrapping Materio components.
-6. Preserve the target project's naming, casing, prefixes, and route hierarchy; never copy project-specific conventions from the example catalog blindly.
-7. Keep loading state local to the page operation unless an existing shared pattern clearly applies.
-8. Do not invent delete behavior, API methods, permission names, or component props without repository evidence.
-9. If the repository contains conflicting patterns, stop and ask which convention is authoritative.
+3. Inspect `assets/` for common generic reusable components and styles before creating equivalent code. Do not regenerate an asset when the same component or style already exists in the current project; reuse the current project's implementation instead. Reuse assets only when the target project supports their dependencies and contract; adapt paths and APIs to the target project.
+4. Read `references/data-patterns.md` before wiring API calls, loading state, error handling, auth, permissions, or workspace behavior.
+5. Use `examples/crud-page/` as a framework-neutral CRUD checklist and adapt its API, component, route, and state details to the target project profile.
+6. Cross-check stock-vs-custom guidance before extending or wrapping Materio components.
+7. Preserve the target project's naming, casing, prefixes, and route hierarchy; never copy project-specific conventions from the example catalog blindly.
+8. Keep loading state local to the page operation unless an existing shared pattern clearly applies.
+9. Do not invent delete behavior, API methods, permission names, or component props without repository evidence.
+10. If the repository contains conflicting patterns, stop and ask which convention is authoritative.
 
 ## Page implementation
 
@@ -40,4 +41,4 @@ Build pages using the target project's established conventions, using the ingest
 - [ ] Filters, pagination, and response handling match the target project; `examples/crud-page/` was used only as an adaptable checklist.
 - [ ] Permission checks use the target project's existing authorization system; no hardcoded role or permission behavior was copied from an example project.
 - [ ] Naming, casing, and folder placement match `references/conventions.md`.
-- [ ] No invented API methods, permission names, or props  everything traceable to repository evidence or user instruction.
+- [ ] No invented API methods, permission names, or props; everything traceable to repository evidence or user instruction.
