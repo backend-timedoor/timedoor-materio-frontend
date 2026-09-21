@@ -62,7 +62,7 @@ The repository includes a Claude Code plugin and marketplace manifest. Install i
 
 ```text
 /plugin marketplace add backend-timedoor/timedoor-materio-frontend
-/plugin install timedoor-materio-nuxt@timedoor-materio-nuxt
+/plugin install timedoor-materio-nuxt
 ```
 
 ```text
